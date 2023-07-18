@@ -10,7 +10,7 @@ import { Card, Section } from '@app/_components'
 
 export const FAQS = () => {
     return (
-        <div className="grid grid-cols-5 grid-flow-row gap-8 my-20 w-full">
+        <div className="grid grid-cols-5 grid-flow-row gap-8 my-20 w-full px-4 md:px-0">
             <div className="hidden md:block col-span-2 bg-black relative rounded h-[32rem] pl-2 pt-2">
                 <div className={"border rounded font-sans -mr-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
@@ -22,7 +22,7 @@ export const FAQS = () => {
                     />
                 </div>
             </div>
-            <Section className='px-2 col-span-3'>
+            <Section className='px-2 col-span-5 md:col-span-3'>
                 <Section.Heading>
                     <Section.Subtitle>
                         <p>faqs</p>

@@ -1,5 +1,6 @@
 import { Navbar } from '@app/_components'
-import { LandingSection, Theory, Metrics, DemoScreen, Features, FAQS } from '@app/_sections'
+import { LandingSection, Theory, Metrics, AppDemoScreen, Features, FAQS } from '@app/_sections'
+import { RequestDemo } from './_sections/RequestDemo'
 
 export default function Home() {
   return (
@@ -8,9 +9,10 @@ export default function Home() {
       <LandingSection/>
       <Theory />
       <Metrics/>
-      <DemoScreen />
+      <AppDemoScreen />
       <Features/>
       <FAQS />
+      <RequestDemo />
     </main>
   )
 }

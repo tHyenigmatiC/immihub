@@ -5,6 +5,7 @@
 type CardProps = {
     width?: string
     bgcolor?: string
+    borderRadius?: string
     children: JSX.Element | JSX.Element[]
 }
 
@@ -16,9 +17,9 @@ type CardContentProps = {
 }
 
 
-export const Card = ({ bgcolor, children, width }: CardProps) => (
-    <div className={"border rounded font-sans border-black pr-1 pb-1 bg-black "+width}>
-        <div className={"border rounded font-sans -ml-1  -mt-1 border-black py-4 px-2 md:px-6 h-full "+bgcolor}>
+export const Card = ({ bgcolor, children, width, borderRadius = 'rounded' }: CardProps) => (
+    <div className={`border rounded font-sans border-black pr-1 pb-1 bg-black ${borderRadius} ${width}`}>
+        <div className={`border rounded font-sans -ml-2 -mt-2 border-black py-4 px-4 md:px-6 h-full ${borderRadius} ${bgcolor}`}>
             {children}
         </div>
     </div>

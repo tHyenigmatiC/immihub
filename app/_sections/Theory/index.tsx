@@ -13,9 +13,9 @@ import { Section } from '@app/_components/Section'
 
 export const Theory = () => {
     return (
-        <div id="why-immihub" className="grid grid-flow-row grid-cols-4 w-full my-10 md:my-28 gap-y-4 gap-x-4 md:gap-x-8 px-8">
-            <div className="hidden md:block col-span-2 row-span-3 bg-black relative rounded w-[26rem] pl-2 pt-2">
-                <div className={"border rounded font-sans -mr-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
+        <div id="why-immihub" className="grid grid-flow-row grid-cols-4 w-full my-10 md:my-28 gap-y-4 gap-x-4 md:gap-x-8 px-4 md:px-8">
+            <div className="hidden md:block col-span-2 row-span-3 bg-black relative rounded w-[26rem]">
+                <div className={"border rounded font-sans -mr-2 ml-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
                         src={UserMobile}
                         alt='user mobile'
@@ -40,7 +40,7 @@ export const Theory = () => {
                     </Section.Body>
                 </Section>
             </div>
-            <div className="col-span-2 md:col-span-1 row-span-1">
+            <div className="col-span-2 md:col-span-1 row-span-1 px-1">
                 <Card bgcolor='bg-blue-200'>
                     <Card.Image bgcolor='bg-black'>
                         <Image 
@@ -57,7 +57,7 @@ export const Theory = () => {
                     </Card.Content>
                 </Card>
             </div>
-            <div className="col-span-2 md:col-span-1 row-span-1">
+            <div className="col-span-2 md:col-span-1 row-span-1 px-1">
                 <Card bgcolor='bg-black'>
                     <Card.Image bgcolor='bg-white'>
                         <Image 

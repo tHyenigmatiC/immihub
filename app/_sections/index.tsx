@@ -1,4 +1,4 @@
-export * from './DemoScreen'
+export * from './AppDemoScreen'
 export * from './Features'
 export * from './Landing-Section'
 export * from './Metrics'

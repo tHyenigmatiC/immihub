@@ -9,8 +9,8 @@ import DefaultIcon from '@app/_assets/icons/bell.svg'
 
 export const Features = () => {
     return (
-        <Section>
-            <Section.Heading className="items-center text-center">
+        <Section className="px-4 my-10 w-full">
+            <Section.Heading className="items-start md:items-center text-start md:text-center">
                 <Section.Subtitle>
                     <p>Our features</p>
                 </Section.Subtitle>
@@ -22,7 +22,7 @@ export const Features = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-8">
                     {
                         featuresData.map(feature => (
-                            <Card key={feature.alt} bgcolor="bg-white" height={8}>
+                            <Card key={feature.alt} bgcolor="bg-white">
                                 <Card.ImageWithText>
                                     <Card.Image bgcolor="bg-black">
                                         <Image
@@ -38,7 +38,7 @@ export const Features = () => {
                                     </Card.Text>
                                 </Card.ImageWithText>
                                 <Card.Content color="text-gray-600">
-                                    <p>
+                                    <p className="leading-6">
                                         {feature.description}
                                     </p>
                                 </Card.Content>

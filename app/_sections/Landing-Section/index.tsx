@@ -15,7 +15,7 @@ export const LandingSection = () => {
                 </p>
 
                 {/* Action Button */}
-                <div className="flex items-center justify-center md:justify-normal gap-4 mt-8 w-full md:w-auto">
+                <div className="flex items-center justify-center md:justify-normal gap-10 mt-8 w-full md:w-auto">
                     <button className="border border-black rounded-md text-base text-gray-900 md:text-sm py-3 px-8">Learn More</button>
                     <button className="bg-blue-600 shadow-md text-white border border-blue-600 rounded-md text-base md:text-sm py-3 px-8">Download Now</button>
                 </div>
