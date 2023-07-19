@@ -5,7 +5,7 @@ const nextConfig = {
     },
     distDir: 'docs',
     output: 'export',
-    assetPrefix: 'https://thyenigmatic.github.io'
+    assetPrefix: 'https://thyenigmatic.github.io/immihub'
 }
 
 module.exports = nextConfig
