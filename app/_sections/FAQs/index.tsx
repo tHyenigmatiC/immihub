@@ -6,17 +6,19 @@ import { Disclosure } from '@headlessui/react'
 import UserMobileImage from '@app/_assets/images/using-mobile.png'
 import ChevronUpIcon from '@app/_assets/icons/chevronup.svg'
 import { Card, Section } from '@app/_components'
+import { FAQsContainer } from './FAQsContainer'
 
 
 export const FAQS = () => {
     return (
-        <div className="grid grid-cols-5 grid-flow-row gap-8 my-20 w-full">
-            <div className="hidden md:block col-span-2 bg-black relative rounded h-[32rem] pl-2 pt-2">
-                <div className={"border rounded font-sans -mr-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
+        <FAQsContainer>
+            <div className="hidden md:block col-span-2 bg-black relative rounded h-[32rem] pr-2 pb-1">
+                <div className={"border relative rounded font-sans -ml-3 -mt-1 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
                         src={UserMobileImage}
                         alt='user mobile'
                         fill
+                        sizes=''
                         style={{objectFit:"cover"}}
                         className='rounded'
                     />
@@ -136,6 +138,6 @@ export const FAQS = () => {
                     </Card>
                 </Section.Body>
             </Section>
-        </div>
+        </FAQsContainer>
     )
 }

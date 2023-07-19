@@ -1,13 +1,14 @@
 import { Section, Card } from "@app/_components"
+import { RequestDemoContainer } from "./RequestDemoContainer"
 
 export const RequestDemo = () => {
     return (
-        <div className="w-auto md:w-full my-24">
+        <RequestDemoContainer>
             <Card bgcolor="bg-purple-300" borderRadius="rounded-2xl">
                 <Section className = 'px-4 md:px-8 my-10 w-full'>
                     <Section.Heading>
                         <Section.Title className="text-center w-full">
-                        <h2 className="text-4xl md:text-5xl leading[1.2]">Helping entreprneurs<br/> to grow business</h2>
+                            Helping entreprneurs<br/> to grow business
                         </Section.Title>
                     </Section.Heading>
                     <Section.Body className="text-center text-gray-900">
@@ -18,6 +19,6 @@ export const RequestDemo = () => {
                     </Section.Body>
                 </Section>
             </Card>
-        </div>
+        </RequestDemoContainer>
     )
 }

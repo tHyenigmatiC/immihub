@@ -4,16 +4,17 @@ import Link from "next/link"
 import { Section } from "@app/_components/Section"
 import { Card } from "@app/_components/Card"
 import DefaultIcon from '@app/_assets/icons/bell.svg'
+import { FeaturesContainer } from "./FeaturesContainer"
 
 export const Features = () => {
     return (
-        <Section className="my-10 w-full">
+        <FeaturesContainer>
             <Section.Heading className="items-start md:items-center text-start md:text-center">
                 <Section.Subtitle>
                     <p>Our features</p>
                 </Section.Subtitle>
                 <Section.Title>
-                    <h2>Immigration Journey Made <br/> Simple</h2>
+                    Immigration Journey Made <br/> Simple
                 </Section.Title>
             </Section.Heading>
             <Section.Body className="text-gray-900">
@@ -50,7 +51,7 @@ export const Features = () => {
                     }
                 </div>
             </Section.Body>
-        </Section>
+        </FeaturesContainer >
     )
 }
 

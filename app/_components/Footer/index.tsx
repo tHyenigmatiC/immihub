@@ -5,6 +5,8 @@ import { Logo } from "@app/_components"
 import ChevronUpIcon from '@app/_assets/icons/chevronup-white.svg'
 import Link from "next/link"
 
+import { FooterContentContainer } from "./FooterContainer"
+
 type FooterProps = {
     children: React.ReactNode | React.ReactNode[]
 }
@@ -16,49 +18,51 @@ type FooterLinkProps = {
 
 export const Footer = () => {
     return (
-        <div className="border-t border-black bg-gray-100">
-            <Footer.Content>
-                <Footer.Row>
-                    {/* Footer column with Logo */}
-                    <Footer.Col>
-                        <Logo />
-                        <div className="mt-12">
-                            <p className="uppercase text-sm text-gray-700">*subscribe to our newsletter*</p>
-                            <div className="flex items-center relative mt-2">
-                                <input
-                                    type='text'
-                                    placeholder="Enter your e-mail"
-                                    className="rounded-full w-[14rem] bg-gray-200 py-2 px-4"
-                                />
-                                <button className="w-9 h-9 rounded-full -ml-5 bg-gray-800 hover:bg-gray-600 flex items-center justify-center">
-                                    <Image 
-                                        src={ChevronUpIcon}
-                                        alt='user mobile'
-                                        style={{objectFit:"cover"}}
-                                        className='rotate-90 transform h-[1.1rem] w-[1.1rem] abolute'
+        <div id="footer" className="border-t border-black bg-gray-100">
+            <FooterContentContainer>
+                <Footer.Content>
+                    <Footer.Row>
+                        {/* Footer column with Logo */}
+                        <Footer.Col>
+                            <Logo />
+                            <div className="mt-12">
+                                <p className="uppercase text-sm text-gray-700">*subscribe to our newsletter*</p>
+                                <div className="flex items-center relative mt-2">
+                                    <input
+                                        type='text'
+                                        placeholder="Enter your e-mail"
+                                        className="rounded-full w-[14rem] bg-gray-200 py-2 px-4"
                                     />
-                                </button>
+                                    <button className="w-9 h-9 rounded-full -ml-5 bg-gray-800 hover:bg-gray-600 flex items-center justify-center">
+                                        <Image 
+                                            src={ChevronUpIcon}
+                                            alt='user mobile'
+                                            style={{objectFit:"cover"}}
+                                            className='rotate-90 transform h-[1.1rem] w-[1.1rem] abolute'
+                                        />
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </Footer.Col>
+                        </Footer.Col>
 
-                    {/* Footer Links */}
-                    {
-                        footerLinks.map(footerLink => (
-                            <Footer.Col key={footerLink.title}>
-                                <Footer.Title>
-                                    {footerLink.title}
-                                </Footer.Title>
-                                {
-                                    footerLink.links.map(link => (
-                                        <Footer.Link key={link.text} href={link.herf} text={link.text} />
-                                    ))
-                                }
-                            </Footer.Col>
-                        ))
-                    }
-                </Footer.Row>
-            </Footer.Content>
+                        {/* Footer Links */}
+                        {
+                            footerLinks.map(footerLink => (
+                                <Footer.Col key={footerLink.title}>
+                                    <Footer.Title>
+                                        {footerLink.title}
+                                    </Footer.Title>
+                                    {
+                                        footerLink.links.map(link => (
+                                            <Footer.Link key={link.text} href={link.herf} text={link.text} />
+                                        ))
+                                    }
+                                </Footer.Col>
+                            ))
+                        }
+                    </Footer.Row>
+                </Footer.Content>
+            </FooterContentContainer>
             <Footer.Tail>
                 <p>Copyright&#12539;©&#12539;2020 Immihub</p>
                 <div className="flex items-center gap-4">
@@ -100,7 +104,7 @@ Footer.Title = ( { children }: FooterProps ) => (
 
 
 Footer.Link = ( { text, href }: FooterLinkProps ) => (
-    <Link href={href} className="text-xs text-gray-600">
+    <Link href={href} className="text-sm text-gray-600">
         {text}
     </Link>
 )

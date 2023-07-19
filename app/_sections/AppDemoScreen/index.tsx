@@ -3,18 +3,19 @@ import Image from "next/image"
 
 import { Section, AppStoreButton, PlayStoreButton } from "@app/_components"
 import AppScreenImage from '@app/_assets/images/app-screen.png'
+import { AppDemoScreenContainer } from "./AppDemoScreenContainer"
 
 
 export const AppDemoScreen = () => {
     return (
-        <div className="flex items-start justify-center gap-2 lg:gap-14 mt-12 mb-20 md:my-32">
+        <AppDemoScreenContainer>
             <Section className="w-full px-0 md:pr-16 flex-1">
                 <Section.Heading>
                     <Section.Subtitle>
                         <p>quick 2 min signup</p>
                     </Section.Subtitle>
                     <Section.Title className="mt-12">
-                        <h2>The new way of Handling Immigration</h2>
+                        The new way of Handling Immigration
                     </Section.Title>
                 </Section.Heading>
                 <Section.Body>
@@ -40,6 +41,6 @@ export const AppDemoScreen = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </AppDemoScreenContainer>
     )
 }

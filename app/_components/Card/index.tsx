@@ -44,7 +44,7 @@ Card.Content = ({ color, children }: CardContentProps) => (
 )
 
 Card.More = ({ color, children } : CardContentProps) => (
-    <div className={"text-xs text-blue-600 font-medium my-6 "+color}>
+    <div className={"text-xs text-blue-600 font-medium my-4 "+color}>
         {children}
     </div>
 )

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,7 +19,7 @@ module.exports = {
       fontFamily: {
         sans: [`var(--font-inter)`],
         'saira-condensed': [`var(--font-saira-condensed)`],
-      }
+      },
     },
   },
   plugins: [],

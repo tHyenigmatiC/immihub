@@ -1,3 +1,4 @@
+import './index.scss'
 
 import Link from "next/link"
 import { MobileMenu } from "../Mobile/Menu"
@@ -11,13 +12,13 @@ export const Navbar = () => {
             <div className="hidden md:flex items-center gap-16 ">
                 {
                     navLinks.map(link => (
-                        <Link href={link.href} key={link.text} className="uppercase font-sans text-xs text-black">
+                        <Link href={link.href} key={link.text} className="uppercase font-sans text-sm text-gray-800 hover:text-gray-500">
                             {link.text}
                         </Link>
                     ))
                 }
             </div>
-            <button className="bg-gray-900 text-white px-6 py-2 rounded shadow drop-shadow hidden md:block">
+            <button className="bg-gray-900 text-white px-6 py-2 rounded shadow drop-shadow hidden md:block download-button">
                 Download
             </button>
         </div>
@@ -28,7 +29,7 @@ export const Navbar = () => {
 export const navLinks = [
     {
         text: 'Home',
-        href: '#'
+        href: './'
     },
     {
         text: 'Why Immihub?',
@@ -36,14 +37,14 @@ export const navLinks = [
     },
     {
         text: 'Features',
-        href: '#'
+        href: './#features'
     },
     {
         text: 'Faqs',
-        href: '#'
+        href: './#faqs'
     },
     {
         text: 'Contact',
-        href: '#'
+        href: './#footer'
     }
 ]

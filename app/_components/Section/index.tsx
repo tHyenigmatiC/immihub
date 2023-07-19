@@ -29,9 +29,9 @@ Section.Subtitle = ( { children , className} : SingleChildProps) => (
 )
 
 Section.Title = ( { children , className} : SingleChildProps) => (
-    <div className={"font-saira-condensed text-4xl leading-[1.3] font-medium text-gray-900 "+className}>
+    <h2 className={"font-saira-condensed text-4xl leading-[1.3] font-medium text-gray-900 "+className}>
         {children}
-    </div>
+    </h2>
 )
 
 Section.Body = ( { children , className} : ChildrenProps ) => (

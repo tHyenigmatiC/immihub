@@ -7,12 +7,13 @@ import FlagIcon from '@app/_assets/icons/flag.svg'
 import GroupIcon from '@app/_assets/icons/group.svg'
 
 import { Card, Section } from '@app/_components'
+import { TheoryContainer } from './TheoryContainer'
 
 export const Theory = () => {
     return (
-        <div id="why-immihub" className="grid grid-flow-row grid-cols-4 w-full my-10 md:my-28 gap-y-4 gap-x-4 md:gap-x-8">
-            <div className="hidden md:block col-span-2 row-span-3 bg-black relative rounded w-[24rem] lg:w-[26rem]">
-                <div className={"border rounded font-sans -mr-2 ml-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
+        <TheoryContainer>
+            <div className="hidden md:block col-span-2 row-span-3 bg-black rounded w-[24rem] lg:w-[26rem] pb-1 pr-2">
+                <div className={"border rounded relative font-sans -ml-2 -mt-1 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
                         src={UserMobile}
                         alt='user mobile'
@@ -29,7 +30,7 @@ export const Theory = () => {
                             <p>why immihub?</p>
                         </Section.Subtitle>
                         <Section.Title>
-                            <h2>Make your Immigration<br/> Journey Easy by <br/>Ensuring Compliance</h2>
+                            Make your Immigration<br/> Journey Easy by <br/>Ensuring Compliance
                         </Section.Title>
                     </Section.Heading>
                     <Section.Body className='text-gray-500'>
@@ -94,6 +95,6 @@ export const Theory = () => {
                     </Card.Content>
                 </Card>
             </div>
-        </div>
+        </TheoryContainer>
     )
 }

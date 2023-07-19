@@ -1,6 +1,8 @@
+import { MetricsContainer } from "./MetrixContainer"
+
 export const Metrics = () => {
     return(
-        <div className="grid grid-cols-4 gap-4 w-full my-16 md:my-10 text-gray-900">
+        <MetricsContainer>
             {
                 metricsData.map(metric => (
                     <div key={metric.type} className="flex flex-col gap-2 md:gap-4 items-start md:items-center my-4 md:my-0 justify-between border-r border-black last:border-none odd:pl-2">
@@ -9,7 +11,7 @@ export const Metrics = () => {
                     </div>
                 ))
             }
-        </div>
+        </MetricsContainer>
     )
 }
 
