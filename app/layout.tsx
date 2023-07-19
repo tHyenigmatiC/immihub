@@ -4,13 +4,13 @@ import { Inter, Saira_Condensed } from 'next/font/google'
 
 import { Navbar, Footer } from '@app/_components'
 
-export const inter = Inter({ 
+const inter = Inter({ 
     subsets: ['latin'], 
     display: 'swap',
     variable: '--font-inter'
 })
 
-export const saira_condensed = Saira_Condensed({ 
+const saira_condensed = Saira_Condensed({ 
     weight: ['400','500','600','700'], 
     subsets: ['latin'], 
     display: 'swap',
