@@ -3,7 +3,8 @@ const nextConfig = {
     images: {
         domains: ['media.giphy.com']
     },
-    distDir: 'docs'
+    distDir: 'docs',
+    output: 'export',
 }
 
 module.exports = nextConfig
