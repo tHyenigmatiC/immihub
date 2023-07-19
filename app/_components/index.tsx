@@ -1,7 +1,0 @@
-export * from './Button'
-export * from './Navbar'
-export * from './Card'
-export * from './Mobile'
-export * from './Section'
-export * from './Logo'
-export * from './Footer'
