@@ -18,7 +18,7 @@ export const saira_condensed = Saira_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: 'Payfast',
+  title: 'Immihub',
   description: 'Learning UI Developement - Project 1',
 }
 

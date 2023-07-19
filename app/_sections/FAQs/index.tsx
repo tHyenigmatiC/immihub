@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { Disclosure } from '@headlessui/react'
 
-import UserMobile from '@app/_assets/images/user-using-app.webp'
+import UserMobileImage from '@app/_assets/images/using-mobile.png'
 import ChevronUpIcon from '@app/_assets/icons/chevronup.svg'
 import { Card, Section } from '@app/_components'
 
@@ -14,7 +14,7 @@ export const FAQS = () => {
             <div className="hidden md:block col-span-2 bg-black relative rounded h-[32rem] pl-2 pt-2">
                 <div className={"border rounded font-sans -mr-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
-                        src={UserMobile}
+                        src={UserMobileImage}
                         alt='user mobile'
                         fill
                         style={{objectFit:"cover"}}

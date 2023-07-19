@@ -5,7 +5,7 @@ import { Logo } from "@app/_components"
 
 export const Navbar = () => {
     return (
-        <div className="w-full border-b border-black py-2 flex items-center justify-between h-[4rem] px-4 md:px-[8rem] bg-gray-100">
+        <div className="w-full border-b border-black py-2 flex items-center justify-between h-[4rem] px-4 md:px-12 lg:px-[8rem] bg-gray-100">
             <Logo />
             <MobileMenu navlinks={navLinks}/>
             <div className="hidden md:flex items-center gap-16 ">

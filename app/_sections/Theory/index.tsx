@@ -11,7 +11,7 @@ import { Card, Section } from '@app/_components'
 export const Theory = () => {
     return (
         <div id="why-immihub" className="grid grid-flow-row grid-cols-4 w-full my-10 md:my-28 gap-y-4 gap-x-4 md:gap-x-8">
-            <div className="hidden md:block col-span-2 row-span-3 bg-black relative rounded w-[26rem]">
+            <div className="hidden md:block col-span-2 row-span-3 bg-black relative rounded w-[24rem] lg:w-[26rem]">
                 <div className={"border rounded font-sans -mr-2 ml-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
                         src={UserMobile}

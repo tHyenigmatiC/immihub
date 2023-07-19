@@ -2,12 +2,12 @@ import Image from "next/image"
 
 
 import { Section, AppStoreButton, PlayStoreButton } from "@app/_components"
-import UserMobile from '@app/_assets/images/user-using-app.webp'
+import AppScreenImage from '@app/_assets/images/app-screen.png'
 
 
 export const AppDemoScreen = () => {
     return (
-        <div className="flex items-start justify-center gap-14 mt-12 mb-20 md:my-32">
+        <div className="flex items-start justify-center gap-2 lg:gap-14 mt-12 mb-20 md:my-32">
             <Section className="w-full px-0 md:pr-16 flex-1">
                 <Section.Heading>
                     <Section.Subtitle>
@@ -27,15 +27,17 @@ export const AppDemoScreen = () => {
                     </div>
                 </Section.Body>
             </Section>
-            <div className="hidden md:block bg-black relative rounded w-[32rem] h-[28rem] pr-2">
+            <div className="hidden md:block bg-black rounded w-[24rem] lg:w-[32rem] h-[28rem] pr-2">
                 <div className={"border rounded font-sans -ml-2 -mt-2 bg-blue-100 border-black py-4 px-6 h-full flex items-center justify-center"}>
-                    <Image 
-                        src={UserMobile}
-                        alt='user mobile'
-                        height={500}                 
-                        style={{objectFit:"cover"}}
-                        className='rounded'
-                    />
+                    <div className="w-[16rem] lg:w-[20rem] h-[32rem] relative">
+                        <Image 
+                            src={AppScreenImage}
+                            alt='user mobile'
+                            fill
+                            style={{objectFit:"contain"}}
+                            className='rounded'
+                        />
+                    </div>
                 </div>
             </div>
         </div>

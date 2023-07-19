@@ -60,7 +60,7 @@ export const Footer = () => {
                 </Footer.Row>
             </Footer.Content>
             <Footer.Tail>
-                <p>Copyright&#12539;©&#12539;2020 Payfast</p>
+                <p>Copyright&#12539;©&#12539;2020 Immihub</p>
                 <div className="flex items-center gap-4">
                     <Link href='#'>
                         Privacy Policy
