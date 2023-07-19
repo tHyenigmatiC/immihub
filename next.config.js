@@ -5,6 +5,7 @@ const nextConfig = {
     },
     distDir: 'docs',
     output: 'export',
+    assetPrefix: 'https://thyenigmatic.github.io'
 }
 
 module.exports = nextConfig
