@@ -1,7 +1,5 @@
 /* eslint-disable react/display-name */
 
-'use client'
-
 type CardProps = {
     width?: string
     bgcolor?: string

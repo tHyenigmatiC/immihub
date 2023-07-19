@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 
@@ -8,19 +6,18 @@ import BellIcon from '@app/_assets/icons/bell.svg'
 import FlagIcon from '@app/_assets/icons/flag.svg'
 import GroupIcon from '@app/_assets/icons/group.svg'
 
-import { Card } from '@app/_components'
-import { Section } from '@app/_components/Section'
+import { Card, Section } from '@app/_components'
 
 export const Theory = () => {
     return (
-        <div id="why-immihub" className="grid grid-flow-row grid-cols-4 w-full my-10 md:my-28 gap-y-4 gap-x-4 md:gap-x-8 px-4 md:px-8">
+        <div id="why-immihub" className="grid grid-flow-row grid-cols-4 w-full my-10 md:my-28 gap-y-4 gap-x-4 md:gap-x-8">
             <div className="hidden md:block col-span-2 row-span-3 bg-black relative rounded w-[26rem]">
                 <div className={"border rounded font-sans -mr-2 ml-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
                         src={UserMobile}
                         alt='user mobile'
-                        layout='fill'
-                        objectFit="cover"
+                        fill
+                        style={{objectFit:"cover"}}
                         className='rounded'
                     />
                 </div>
@@ -46,8 +43,8 @@ export const Theory = () => {
                         <Image 
                             src={GroupIcon}
                             alt='tick'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full p-1"
                         />
                     </Card.Image>
@@ -63,8 +60,8 @@ export const Theory = () => {
                         <Image 
                             src={FlagIcon}
                             alt='tick'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full p-1"
                         />
                     </Card.Image>
@@ -82,8 +79,8 @@ export const Theory = () => {
                         <Image 
                             src={BellIcon}
                             alt='tick'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full p-1"
                         />
                     </Card.Image>

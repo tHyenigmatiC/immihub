@@ -29,7 +29,7 @@ export const MobileMenu = ( {navlinks}: MobileMenuProps) => {
             <Menu.Items className='flex flex-col p-4 bg-gray-900 rounded focus-visible:outline-none absolute right-1 top-[4.75rem]'>
                 {
                     navlinks.map(link => (
-                        <Menu.Item key={link.href}>
+                        <Menu.Item key={link.text}>
                             {({ active }) => (
                                 <Link
                                     className={`${active && 'bg-white'} px-1 py-2 rounded text-white text-xl`}

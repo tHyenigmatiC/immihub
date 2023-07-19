@@ -6,8 +6,7 @@ import User3 from '@app/_assets/images/3.webp'
 import User4 from '@app/_assets/images/4.webp'
 import User5 from '@app/_assets/images/5.webp'
 import TickIcon from '@app/_assets/icons/tick.svg'
-import { AppStoreButton } from "@app/_components/Button/AppStoreButton"
-import { PlayStoreButton } from "@app/_components/Button/PlayStoreButton"
+import { AppStoreButton, PlayStoreButton  } from "@app/_components"
 
 export const UsersInfo = () => {
     return (
@@ -21,8 +20,8 @@ export const UsersInfo = () => {
                         <Image 
                             src={User5}
                             alt='user 1'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full pr-1 pb-1"
                         />
                     </div>
@@ -30,8 +29,8 @@ export const UsersInfo = () => {
                         <Image 
                             src={User2}
                             alt='user 2'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full pr-1 pb-1"
                         />
                     </div>
@@ -39,8 +38,8 @@ export const UsersInfo = () => {
                         <Image 
                             src={User3}
                             alt='user 3'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full pr-1 pb-1"
                         />
                     </div>
@@ -48,8 +47,8 @@ export const UsersInfo = () => {
                         <Image 
                             src={User4}
                             alt='user 4'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full pr-1 pb-1"
                         />
                     </div>
@@ -59,16 +58,16 @@ export const UsersInfo = () => {
                     <Image 
                         src={User1}
                         alt='user 1'
-                        layout='fill'
-                        objectFit="cover"
+                        fill
+                        style={{objectFit:"cover"}}
                         className="rounded-full"
                     />
                     <div className="w-6 h-6 absolute rounded-full bg-white -right-2 z-10 drop-shadow top-4">
                         <Image 
                             src={TickIcon}
                             alt='tick'
-                            layout='fill'
-                            objectFit="cover"
+                            fill
+                            style={{objectFit:"cover"}}
                             className="rounded-full p-1"
                         />
                     </div>

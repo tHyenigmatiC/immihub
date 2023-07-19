@@ -1,16 +1,13 @@
 import Image from "next/image"
 
 
-import { Card } from "@app/_components"
-import { AppStoreButton } from "@app/_components/Button/AppStoreButton"
-import { PlayStoreButton } from "@app/_components/Button/PlayStoreButton"
-import { Section } from "@app/_components/Section"
+import { Section, AppStoreButton, PlayStoreButton } from "@app/_components"
 import UserMobile from '@app/_assets/images/user-using-app.webp'
 
 
 export const AppDemoScreen = () => {
     return (
-        <div className="flex items-start justify-center gap-14 my-32 px-4 md:px-0">
+        <div className="flex items-start justify-center gap-14 mt-12 mb-20 md:my-32">
             <Section className="w-full px-0 md:pr-16 flex-1">
                 <Section.Heading>
                     <Section.Subtitle>
@@ -24,7 +21,7 @@ export const AppDemoScreen = () => {
                     <p className="text-gray-500 leading-6 mt-6 text-base">Case Status | Journey Tabs | Notifications | Groups | Talk to Lawyers | and many other 
                         features to make your Journey Simple.
                     </p>
-                    <div className="flex items-center justify-around md:justify-normal gap-4 mt-12 md:mt-24">
+                    <div className="flex items-center justify-start md:justify-normal gap-10 mt-12 md:mt-24">
                         <AppStoreButton />
                         <PlayStoreButton />
                     </div>
@@ -36,7 +33,7 @@ export const AppDemoScreen = () => {
                         src={UserMobile}
                         alt='user mobile'
                         height={500}                 
-                        objectFit="cover"
+                        style={{objectFit:"cover"}}
                         className='rounded'
                     />
                 </div>

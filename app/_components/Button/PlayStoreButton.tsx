@@ -9,7 +9,7 @@ export const PlayStoreButton = () => (
             alt='play store icon'
             height={32}
             width={32}
-            objectFit="contain"
+            style={{objectFit:"contain"}}
         />
         <p className="leading-3">Get it on<br/><span className="font-semibold text-lg">Google Play</span></p>
     </button>

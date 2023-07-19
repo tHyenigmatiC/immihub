@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Saira_Condensed } from 'next/font/google'
 
+import { Navbar, Footer } from '@app/_components'
+
 export const inter = Inter({ 
     subsets: ['latin'], 
     display: 'swap',
@@ -27,7 +29,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${saira_condensed.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${saira_condensed.variable}`}>
+        <nav><Navbar/></nav>
+        {children}
+        <footer><Footer/></footer>
+      </body>
     </html>
   )
 }

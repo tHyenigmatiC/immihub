@@ -10,14 +10,14 @@ import { Card, Section } from '@app/_components'
 
 export const FAQS = () => {
     return (
-        <div className="grid grid-cols-5 grid-flow-row gap-8 my-20 w-full px-4 md:px-0">
+        <div className="grid grid-cols-5 grid-flow-row gap-8 my-20 w-full">
             <div className="hidden md:block col-span-2 bg-black relative rounded h-[32rem] pl-2 pt-2">
                 <div className={"border rounded font-sans -mr-2 mt-2 bg-black border-black py-4 px-6 h-full"}>
                     <Image 
                         src={UserMobile}
                         alt='user mobile'
-                        layout='fill'
-                        objectFit="cover"
+                        fill
+                        style={{objectFit:"cover"}}
                         className='rounded'
                     />
                 </div>
@@ -41,7 +41,7 @@ export const FAQS = () => {
                                     <Image 
                                         src={ChevronUpIcon}
                                         alt='user mobile'
-                                        objectFit="cover"
+                                        style={{objectFit:"cover"}}
                                         className={`${
                                             open ? 'rotate-180 transform' : ''
                                         } h-5 w-5 text-purple-500`}
@@ -61,7 +61,7 @@ export const FAQS = () => {
                                     <Image 
                                         src={ChevronUpIcon}
                                         alt='user mobile'
-                                        objectFit="cover"
+                                        style={{objectFit:"cover"}}
                                         className={`${
                                             open ? 'rotate-180 transform' : ''
                                         } h-5 w-5 text-purple-500`}
@@ -81,7 +81,7 @@ export const FAQS = () => {
                                     <Image 
                                         src={ChevronUpIcon}
                                         alt='user mobile'
-                                        objectFit="cover"
+                                        style={{objectFit:"cover"}}
                                         className={`${
                                             open ? 'rotate-180 transform' : ''
                                         } h-5 w-5 text-purple-500`}
@@ -101,7 +101,7 @@ export const FAQS = () => {
                                     <Image 
                                         src={ChevronUpIcon}
                                         alt='user mobile'
-                                        objectFit="cover"
+                                        style={{objectFit:"cover"}}
                                         className={`${
                                             open ? 'rotate-180 transform' : ''
                                         } h-5 w-5 text-purple-500`}
@@ -121,7 +121,7 @@ export const FAQS = () => {
                                     <Image 
                                         src={ChevronUpIcon}
                                         alt='user mobile'
-                                        objectFit="cover"
+                                        style={{objectFit:"cover"}}
                                         className={`${
                                             open ? 'rotate-180 transform' : ''
                                         } h-5 w-5 text-purple-500`}

@@ -9,7 +9,7 @@ export const AppStoreButton = () => (
             alt='play store icon'
             height={32}
             width={32}
-            objectFit="contain"
+            style={{objectFit: 'contain'}}
         />
         <p className="leading-3">Download on the <br/><span className="font-semibold text-lg">App Store</span></p>
     </button>

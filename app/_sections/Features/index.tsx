@@ -1,15 +1,13 @@
-'use client'
-
 import Image from "next/image"
 import Link from "next/link"
 
 import { Section } from "@app/_components/Section"
-import {Card} from "@app/_components/Card"
+import { Card } from "@app/_components/Card"
 import DefaultIcon from '@app/_assets/icons/bell.svg'
 
 export const Features = () => {
     return (
-        <Section className="px-4 my-10 w-full">
+        <Section className="my-10 w-full">
             <Section.Heading className="items-start md:items-center text-start md:text-center">
                 <Section.Subtitle>
                     <p>Our features</p>
@@ -30,7 +28,7 @@ export const Features = () => {
                                             src={feature.icon}
                                             height={24}
                                             width={24}
-                                            objectFit="contain"
+                                            style={{objectFit:"contain"}}
                                         />
                                     </Card.Image>
                                     <Card.Text>
